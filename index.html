@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BO BEE3.0 - Desa & Diseño</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark pb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-lg-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=".">BO BEE3.0 - Desa & Diseño</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-3 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Indice
+              </a>
+              <ul
+                class="dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white" href="#main"
+                    >Elementos principales</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#orientacion"
+                    >Orientando items</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#ubicacion"
+                    >Ubicando items</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Repo github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-5">
+      <div class="d-flex">
+        <h3 class="text-danger mb-5" id="flex">
+          Flexbox: <span class="text-white">uso y nociones básicas</span>
+        </h3>
+      </div>
+      <!-- <div class="d-inline-flex flex-column text-white my-4">
+        <p class="font-weight-light">Indice:</p>
+        <span class="font-size-2"></span>
+        <span>I) Elementos principales</span>
+        <span>II) Orientando items con Flexbox & Bootstrap</span>
+        <span>III) Posicionando items con flexbox y bootstrap</span>
+      </div> -->
+      <h4 class="text-info my-4 d-block" id="main">
+        I) Elementos principales del esquema flex.
+      </h4>
+      <ol class="mb-5">
+        <li class="text-white">Contenedor padre</li>
+        <li class="text-white">Hijos (items)</li>
+        <li class="text-white">Ejes (primario y secundario)</li>
+      </ol>
+      <h4 class="text-info my-4 d-block" id="orientacion">
+        II) Orientando items con Flexbox & Bootstrap
+      </h4>
+      <p class="text-white">
+        Bootstrap con sus clases relacionadas a Flexbox nos hace mucho más fácil
+        la tarea de maquetar elementos y alinearlos en un determinado
+        contenedor.
+      </p>
+
+      <h5 class="my-4">
+        <span class="badge bg-secondary text-white"> d-flex</span>
+        <span class="badge bg-secondary text-white"> d-inline-flex</span>
+      </h5>
+      <ul class="mb-4">
+        <li class="text-white">
+          La clase <code> d-flex</code> se aplica a un contenedor para orientar
+          a sus hijos <b>sobre el eje horizontal (eje X)</b> y se va a estirar
+          al 100% de donde esté ubicado.
+        </li>
+        <li class="text-white">
+          Por otro lado <code> d-inline-flex</code> se va a comportar similiar
+          aunque sólo va a ocupar el ancho que generen sus hijos.
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-flex</code>
+          </h6>
+          <div class="d-flex border border-info mb-4 p-3 justify-content-start">
+            <span
+              class="fs-4 text-white border border-white mr-3 p-2 d-inline-block"
+            >
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-inline-flex</code>
+          </h6>
+          <div class="d-inline-flex border border-info text-white mb-5 p-3">
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-lg-center">
+        <div class="col-lg-6 alert alert-dismissible alert-warning mb-4">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              "Las clases <code> d-flex</code> y
+              <code class="text-nowrap"> d-inline-flex</code>
+              nunca deben usarse juntas."
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+      <p class="text-white">
+        Si necesitamos hacer uso de las propiedades de flexbox y ubicar items en
+        forma de columna (eje Y) se debe <b>sumar</b> la clase
+        <code>flex-column</code>.
+      </p>
+      <h5 class="text-white my-4">
+        <span class="badge bg-secondary text-white"> d-flex</span>
+        <span class="badge bg-secondary text-white"> d-inline-flex</span> +
+        <span class="badge bg-secondary text-white">flex-column</span>
+      </h5>
+      <ul class="mb-4">
+        <li class="text-white">
+          La clase <code>flex-column</code> se agrega al elemento padre, ya
+          flex, y <b>cambia el sentido de disposición de sus hijos</b>, ahora
+          sobre el eje Y.
+        </li>
+        <li class="text-white">
+          <code> d-flex</code> + <code>flex-column</code> establecen un
+          contenedor en forma de columna que abarca el 100% del ancho donde se
+          encuentre.
+        </li>
+        <li class="text-white">
+          <code> d-inline-flex</code> + <code>flex-column</code> establecen un
+          contenedor en forma de columna que ocupa el ancho generado por sus
+          hijos.
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-flex flex-column</code>
+          </h6>
+          <div
+            class="d-flex flex-column border border-info mb-4 p-3 justify-content-start"
+          >
+            <span
+              class="fs-4 text-white border border-white mr-3 p-2 d-inline-block"
+            >
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-inline-flex flex-column</code>
+          </h6>
+          <div
+            class="d-inline-flex flex-column border border-info text-white mb-5 fs-4 p-3"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="text-info mb-4 d-block" id="ubicacion">
+        III) Posicionando items con flexbox y bootstrap
+      </h4>
+      <h5 class="text-white my-4">
+        <span class="badge bg-secondary text-white">justify-content-*</span>
+        <span class="badge bg-secondary text-white">align-items-*</span>
+      </h5>
+      <p class="text-white">
+        Para posicionar y ordenar los items dentro del contenedor se usan 2
+        clases diferentes: <code>justify-content-*</code> que ordena y ubica los
+        items <b>en el eje principal</b> y <code>align-items-*</code> que hace
+        lo mismo <b>en el eje secundario o cruzado</b>
+      </p>
+      <p class="text-white">
+        Existen más clases pero por el momento sólo nos enfocaremos en estas
+        dos, y para evitar confusiones con ellas
+        <b>es clave tener en cuenta la orientación</b> que estemos usando.
+      </p>
+
+      <p class="text-white mb-5">
+        Entonces, cuando estamos usando simplemente <code> d-flex</code> vamos a
+        usar la clase <code>justify-content-*</code> para ubicar a los elementos
+        en forma horizontal (eje principal de d-flex) y
+        <code>align-items-*</code> para ubicar a los elementos en forma vertical
+        (eje perpendicular).
+      </p>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info">d-flex</code>
+            <code> justify-content-start</code>
+          </h6>
+          <div class="d-flex border border-info mb-4 p-3 justify-content-start">
+            <span
+              class="fs-4 text-white border border-white mr-3 p-2 d-inline-block"
+            >
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info">d-flex</code>
+            <code> justify-content-end</code>
+          </h6>
+          <div class="d-flex border border-info mb-4 p-3 justify-content-end">
+            <span
+              class="fs-4 text-white border border-white mr-3 p-2 d-inline-block"
+            >
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info">d-flex</code>
+            <code>justify-content-center</code>
+          </h6>
+          <div
+            class="d-flex border border-info mb-4 p-3 justify-content-center"
+          >
+            <span
+              class="fs-4 text-white border border-white mr-3 p-2 d-inline-block"
+            >
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info">d-flex</code>
+            <code>justify-content-between</code>
+          </h6>
+          <div
+            class="d-flex border border-info mb-5 p-3 justify-content-between"
+          >
+            <span
+              class="fs-4 text-white border border-white mr-3 p-2 d-inline-block"
+            >
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-white my-5">
+        Por el contrario, cuando usamos <code> d-flex</code> o
+        <code>d-inline-flex</code> y le sumamos <code>flex-column</code> la
+        clase <code>justify-content-*</code> ubicará a los hijos en el eje
+        vertical, mientras que <code>align-items-*</code> ubicará a los items en
+        el eje horizontal.
+      </p>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-flex flex-column</code>
+            <code>justify-content-start</code>
+          </h6>
+          <div
+            class="d-flex flex-column border border-info mb-5 p-3 justify-content-start"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-flex flex-column</code>
+            <code>justify-content-end</code>
+          </h6>
+          <div
+            class="d-flex flex-column border border-info mb-5 p-3 justify-content-end"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-flex flex-column</code>
+            <code>justify-content-center</code>
+          </h6>
+          <div
+            class="d-flex flex-column border border-info mb-5 p-3 justify-content-center"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info">d-flex flex-column</code>
+            <code>justify-content-between</code>
+          </h6>
+          <div
+            class="d-flex flex-column border border-info mb-5 p-3 justify-content-between"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-inline-flex flex-column</code>
+            <code>justify-content-start</code>
+          </h6>
+          <div
+            class="d-inline-flex flex-column border border-info mb-5 p-3 justify-content-start"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-inline-flex flex-column</code>
+            <code>justify-content-end</code>
+          </h6>
+          <div
+            class="d-inline-flex flex-column border border-info mb-5 p-3 justify-content-end"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info">d-inline-flex flex-column</code>
+            <code>justify-content-center</code>
+          </h6>
+          <div
+            class="d-inline-flex flex-column border border-info mb-5 p-3 justify-content-center"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-white mb-4">
+            <code class="text-info"> d-inline-flex flex-column</code>
+            <code>justify-content-between</code>
+          </h6>
+          <div
+            class="d-inline-flex flex-column border border-info mb-5 p-3 justify-content-between"
+            style="height: 280px"
+          >
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 1
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 2
+            </span>
+            <span class="fs-4 text-white border border-white mr-3 p-2 d-block">
+              Hijo 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-lg-center">
+        <div class="col-lg-6 alert alert-dismissible alert-warning my-5">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              "Las clases <code>justify-content-*</code> y
+              <code class="text-nowrap">align-items-*</code>
+              nunca deben usarse en los elementos hijos para posicionarlos."
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+      <p class="text-white my-5">Continuará...</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
